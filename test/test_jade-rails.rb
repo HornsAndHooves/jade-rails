@@ -1,5 +1,6 @@
 require 'jade-rails'
 require 'test/unit'
+require 'stringio'
 
 class JadeTest < Test::Unit::TestCase
   JADE_TEMPLATE_FUNCTION_PATTERN = /^function\s+template\s*\(locals\)\s*\{.*\}$/m
