@@ -4,3 +4,4 @@
 .ruby-version
 pkg/
 tmp/
+.idea/

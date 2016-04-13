@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'jade/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'jade-rails'
+  spec.name          = 'HornsAndHooves-jade-rails'
   spec.version       = Jade::VERSION
   spec.author        = 'Paul Raythattha'
   spec.email         = 'paul@appfactories.com'
@@ -15,8 +15,8 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0")
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
 
-  spec.add_dependency 'execjs'
-  spec.add_dependency 'tilt'
+  spec.add_dependency 'execjs', '~> 2.6'
+  spec.add_dependency 'tilt',   '~> 1.3'
 
   spec.add_development_dependency 'bundler', '~> 1.7'
   spec.add_development_dependency 'rake',    '~> 10.0'
